@@ -1,0 +1,177 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices m:DataServiceVersion="1.0" m:MaxDataServiceVersion="3.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+    <Schema Namespace="NAV" xmlns="http://schemas.microsoft.com/ado/2007/05/edm">
+      <EntityType Name="my_customer_service">
+        <Key>
+          <PropertyRef Name="No" />
+        </Key>
+        <Property Name="No" Type="Edm.String" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
+        <Property Name="Search_Name" Type="Edm.String" />
+        <Property Name="IC_Partner_Code" Type="Edm.String" />
+        <Property Name="Balance_LCY" Type="Edm.Decimal" />
+        <Property Name="Balance_Due_LCY" Type="Edm.Decimal" />
+        <Property Name="Credit_Limit_LCY" Type="Edm.Decimal" />
+        <Property Name="Blocked" Type="Edm.String" />
+        <Property Name="Privacy_Blocked" Type="Edm.Boolean" />
+        <Property Name="Salesperson_Code" Type="Edm.String" />
+        <Property Name="Responsibility_Center" Type="Edm.String" />
+        <Property Name="Service_Zone_Code" Type="Edm.String" />
+        <Property Name="Document_Sending_Profile" Type="Edm.String" />
+        <Property Name="TotalSales2" Type="Edm.Decimal" />
+        <Property Name="CustSalesLCY_CustProfit_AdjmtCostLCY" Type="Edm.Decimal" />
+        <Property Name="AdjCustProfit" Type="Edm.Decimal" />
+        <Property Name="AdjProfitPct" Type="Edm.Decimal" />
+        <Property Name="Last_Date_Modified" Type="Edm.DateTime" />
+        <Property Name="Disable_Search_by_Name" Type="Edm.Boolean" />
+        <Property Name="Address" Type="Edm.String" />
+        <Property Name="Address_2" Type="Edm.String" />
+        <Property Name="City" Type="Edm.String" />
+        <Property Name="County" Type="Edm.String" />
+        <Property Name="Post_Code" Type="Edm.String" />
+        <Property Name="Country_Region_Code" Type="Edm.String" />
+        <Property Name="ShowMap" Type="Edm.String" />
+        <Property Name="Primary_Contact_No" Type="Edm.String" />
+        <Property Name="ContactName" Type="Edm.String" />
+        <Property Name="Phone_No" Type="Edm.String" />
+        <Property Name="E_Mail" Type="Edm.String" />
+        <Property Name="Fax_No" Type="Edm.String" />
+        <Property Name="Home_Page" Type="Edm.String" />
+        <Property Name="Language_Code" Type="Edm.String" />
+        <Property Name="Bill_to_Customer_No" Type="Edm.String" />
+        <Property Name="VAT_Registration_No" Type="Edm.String" />
+        <Property Name="GLN" Type="Edm.String" />
+        <Property Name="Copy_Sell_to_Addr_to_Qte_From" Type="Edm.String" />
+        <Property Name="Invoice_Copies" Type="Edm.Int32" />
+        <Property Name="Gen_Bus_Posting_Group" Type="Edm.String" />
+        <Property Name="VAT_Bus_Posting_Group" Type="Edm.String" />
+        <Property Name="Customer_Posting_Group" Type="Edm.String" />
+        <Property Name="Currency_Code" Type="Edm.String" />
+        <Property Name="Customer_Price_Group" Type="Edm.String" />
+        <Property Name="Customer_Disc_Group" Type="Edm.String" />
+        <Property Name="Allow_Line_Disc" Type="Edm.Boolean" />
+        <Property Name="Invoice_Disc_Code" Type="Edm.String" />
+        <Property Name="Prices_Including_VAT" Type="Edm.Boolean" />
+        <Property Name="Prepayment_Percent" Type="Edm.Decimal" />
+        <Property Name="Application_Method" Type="Edm.String" />
+        <Property Name="Partner_Type" Type="Edm.String" />
+        <Property Name="Payment_Terms_Code" Type="Edm.String" />
+        <Property Name="Payment_Method_Code" Type="Edm.String" />
+        <Property Name="Reminder_Terms_Code" Type="Edm.String" />
+        <Property Name="Fin_Charge_Terms_Code" Type="Edm.String" />
+        <Property Name="Cash_Flow_Payment_Terms_Code" Type="Edm.String" />
+        <Property Name="Print_Statements" Type="Edm.Boolean" />
+        <Property Name="Last_Statement_No" Type="Edm.Int32" />
+        <Property Name="Block_Payment_Tolerance" Type="Edm.Boolean" />
+        <Property Name="Preferred_Bank_Account_Code" Type="Edm.String" />
+        <Property Name="Ship_to_Code" Type="Edm.String" />
+        <Property Name="Location_Code" Type="Edm.String" />
+        <Property Name="Combine_Shipments" Type="Edm.Boolean" />
+        <Property Name="Reserve" Type="Edm.String" />
+        <Property Name="Shipping_Advice" Type="Edm.String" />
+        <Property Name="Shipment_Method_Code" Type="Edm.String" />
+        <Property Name="Shipping_Agent_Code" Type="Edm.String" />
+        <Property Name="Shipping_Agent_Service_Code" Type="Edm.String" />
+        <Property Name="Shipping_Time" Type="Edm.String" />
+        <Property Name="Base_Calendar_Code" Type="Edm.String" />
+        <Property Name="Customized_Calendar" Type="Edm.String" />
+        <Property Name="ExpectedCustMoneyOwed" Type="Edm.Decimal" />
+        <Property Name="TotalMoneyOwed" Type="Edm.Decimal" />
+        <Property Name="CalcCreditLimitLCYExpendedPct" Type="Edm.Decimal" />
+        <Property Name="Balance_Due" Type="Edm.Decimal" />
+        <Property Name="Payments_LCY" Type="Edm.Decimal" />
+        <Property Name="CustomerMgt_AvgDaysToPay_No" Type="Edm.Decimal" />
+        <Property Name="DaysPaidPastDueDate" Type="Edm.Decimal" />
+        <Property Name="GetAmountOnPostedInvoices" Type="Edm.Decimal" />
+        <Property Name="GetAmountOnCrMemo" Type="Edm.Decimal" />
+        <Property Name="GetAmountOnOutstandingInvoices" Type="Edm.Decimal" />
+        <Property Name="GetAmountOnOutstandingCrMemos" Type="Edm.Decimal" />
+        <Property Name="Totals" Type="Edm.Decimal" />
+        <Property Name="CustInvDiscAmountLCY" Type="Edm.Decimal" />
+        <Property Name="Global_Dimension_1_Filter" Type="Edm.String" />
+        <Property Name="Global_Dimension_2_Filter" Type="Edm.String" />
+        <Property Name="Currency_Filter" Type="Edm.String" />
+        <Property Name="Date_Filter" Type="Edm.String" />
+        <Property Name="ETag" Type="Edm.String" ConcurrencyMode="Fixed" />
+        <NavigationProperty Name="my_customer_servicePriceAndLineDisc" Relationship="NAV.my_customer_service_my_customer_servicePriceAndLineDisc" ToRole="my_customer_servicePriceAndLineDisc" FromRole="my_customer_service" />
+      </EntityType>
+      <EntityType Name="my_customer_servicePriceAndLineDisc">
+        <Key>
+          <PropertyRef Name="Code" />
+          <PropertyRef Name="Currency_Code" />
+          <PropertyRef Name="Line_Type" />
+          <PropertyRef Name="Loaded_Customer_No" />
+          <PropertyRef Name="Loaded_Disc_Group" />
+          <PropertyRef Name="Loaded_Item_No" />
+          <PropertyRef Name="Loaded_Price_Group" />
+          <PropertyRef Name="Minimum_Quantity" />
+          <PropertyRef Name="Sales_Code" />
+          <PropertyRef Name="Sales_Type" />
+          <PropertyRef Name="Starting_Date" />
+          <PropertyRef Name="Type" />
+          <PropertyRef Name="Unit_of_Measure_Code" />
+          <PropertyRef Name="Variant_Code" />
+        </Key>
+        <Property Name="Line_Type" Type="Edm.String" Nullable="false" />
+        <Property Name="Type" Type="Edm.String" Nullable="false" />
+        <Property Name="Code" Type="Edm.String" Nullable="false" />
+        <Property Name="Sales_Type" Type="Edm.String" Nullable="false" />
+        <Property Name="Sales_Code" Type="Edm.String" Nullable="false" />
+        <Property Name="Starting_Date" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="Currency_Code" Type="Edm.String" Nullable="false" />
+        <Property Name="Variant_Code" Type="Edm.String" Nullable="false" />
+        <Property Name="Unit_of_Measure_Code" Type="Edm.String" Nullable="false" />
+        <Property Name="Minimum_Quantity" Type="Edm.Decimal" Nullable="false" />
+        <Property Name="Loaded_Item_No" Type="Edm.String" Nullable="false" />
+        <Property Name="Loaded_Disc_Group" Type="Edm.String" Nullable="false" />
+        <Property Name="Loaded_Customer_No" Type="Edm.String" Nullable="false" />
+        <Property Name="Loaded_Price_Group" Type="Edm.String" Nullable="false" />
+        <Property Name="Line_Discount_Percent" Type="Edm.Decimal" />
+        <Property Name="Unit_Price" Type="Edm.Decimal" />
+        <Property Name="Ending_Date" Type="Edm.DateTime" />
+        <Property Name="Price_Includes_VAT" Type="Edm.Boolean" />
+        <Property Name="Allow_Invoice_Disc" Type="Edm.Boolean" />
+        <Property Name="VAT_Bus_Posting_Gr_Price" Type="Edm.String" />
+        <Property Name="Allow_Line_Disc" Type="Edm.Boolean" />
+        <Property Name="ETag" Type="Edm.String" ConcurrencyMode="Fixed" />
+      </EntityType>
+      <EntityType Name="Company">
+        <Key>
+          <PropertyRef Name="Name" />
+        </Key>
+        <Property Name="Name" Type="Edm.String" Nullable="false" />
+        <NavigationProperty Name="my_customer_service" Relationship="NAV.Company_my_customer_service" ToRole="my_customer_service" FromRole="Company" />
+        <NavigationProperty Name="my_customer_servicePriceAndLineDisc" Relationship="NAV.Company_my_customer_servicePriceAndLineDisc" ToRole="my_customer_servicePriceAndLineDisc" FromRole="Company" />
+      </EntityType>
+      <Association Name="my_customer_service_my_customer_servicePriceAndLineDisc">
+        <End Type="NAV.my_customer_servicePriceAndLineDisc" Role="my_customer_servicePriceAndLineDisc" Multiplicity="*" />
+        <End Type="NAV.my_customer_service" Role="my_customer_service" Multiplicity="*" />
+      </Association>
+      <Association Name="Company_my_customer_service">
+        <End Type="NAV.my_customer_service" Role="my_customer_service" Multiplicity="*" />
+        <End Type="NAV.Company" Role="Company" Multiplicity="*" />
+      </Association>
+      <Association Name="Company_my_customer_servicePriceAndLineDisc">
+        <End Type="NAV.my_customer_servicePriceAndLineDisc" Role="my_customer_servicePriceAndLineDisc" Multiplicity="*" />
+        <End Type="NAV.Company" Role="Company" Multiplicity="*" />
+      </Association>
+      <EntityContainer Name="NAV" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="my_customer_service" EntityType="NAV.my_customer_service" />
+        <EntitySet Name="my_customer_servicePriceAndLineDisc" EntityType="NAV.my_customer_servicePriceAndLineDisc" />
+        <EntitySet Name="Company" EntityType="NAV.Company" />
+        <AssociationSet Name="my_customer_service_my_customer_servicePriceAndLineDisc_my_customer_servicePriceAndLineDisc" Association="NAV.my_customer_service_my_customer_servicePriceAndLineDisc">
+          <End Role="my_customer_service" EntitySet="my_customer_service" />
+          <End Role="my_customer_servicePriceAndLineDisc" EntitySet="my_customer_servicePriceAndLineDisc" />
+        </AssociationSet>
+        <AssociationSet Name="Company_my_customer_service_my_customer_service" Association="NAV.Company_my_customer_service">
+          <End Role="Company" EntitySet="Company" />
+          <End Role="my_customer_service" EntitySet="my_customer_service" />
+        </AssociationSet>
+        <AssociationSet Name="Company_my_customer_servicePriceAndLineDisc_my_customer_servicePriceAndLineDisc" Association="NAV.Company_my_customer_servicePriceAndLineDisc">
+          <End Role="Company" EntitySet="Company" />
+          <End Role="my_customer_servicePriceAndLineDisc" EntitySet="my_customer_servicePriceAndLineDisc" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
